@@ -1,0 +1,52 @@
+body {
+	background-color: #fde;
+	position: relative;
+	top: 5em;
+	background-image: url(../imeges/fon4.jpg);
+
+}
+
+.model {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	background: #ffc;
+	width: 26rem;
+	text-align: center;
+	padding: 5px 0px;
+	border-radius: 10px;
+}
+.login {
+	margin: 10px;
+	/*background: red;*/
+	display: flex;
+	padding-left: 10px;
+	justify-content: center;
+
+}
+.model-google {
+	padding: 0px 5px 10px ;
+	/*border-image: url(../imeges/google.svg)*/
+	/*align-items: center;*/
+}
+.model-fecebock{
+	padding: 0px 5px 10px ;
+	/*align-items: center;*/
+}
+.gf{
+	width: 185px;
+	height: 80px;
+	border-radius: 10px;
+
+}
+.model-google:hover {
+	background-image: url(../imeges/fon4.jpg);
+	/*background: #53ea93;*/
+	border-radius: 10px;
+
+}
+.model-fecebock:hover {
+	background-image: url(../imeges/fon4.jpg);
+	/*background: #53ea93;*/
+	border-radius: 10px;
+}

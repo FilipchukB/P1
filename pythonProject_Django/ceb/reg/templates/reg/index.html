@@ -1,0 +1,43 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'reg/css/css.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet">	
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<form>
+			<input class="serch" type="text" placeholder="search" name="">
+			<input type="submit" value="Search">
+		</form>
+		<div class="rm">
+			<ul class="menu">
+					<li><div class="home" ><a  href="#"></a></div></li>
+					<li><a href="#">{{ user.username }}</a></li>
+					<div class="up" id="arrowTop"></div>
+
+			</ul>
+		</div>
+	</header>
+	<div class="oll">
+
+		{% for tabr in tab_list %}
+		<div class="content"><h5>{{ tabr.title }}</h5><p><img class="content-img" src="{{ tabr.image.url }}" alt="">{{ tabr.body }}</p></div>
+		{% endfor %}
+		{% for tab2 in tab_L %}
+		<div class="tablet-content"><h5>{{ tab2.title }}</h5><p>{{ tab2.body }}</p></div>
+		{% endfor %}
+
+	</div>
+	
+	<script type="text/javascript" src="{% static 'reg/js/script.js' %}"></script>
+
+</body>
+</html>

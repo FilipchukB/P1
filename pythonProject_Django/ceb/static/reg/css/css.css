@@ -1,0 +1,142 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+img {
+	max-width: 100%
+}
+header {
+	margin: 20px auto;
+	max-width: 90%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(52, 79, 121, .56)
+	
+}
+header .menu {
+	list-style-type: none;
+	font-size: 0px;
+	font-weight: 600;
+		/*margin-right: 20px*/
+
+} 
+header .menu li {
+	display: inline-block;
+	color: blue;
+	margin-right: 40px
+
+	
+}
+header .menu li a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+	/*margin-bottom: 100px;*/
+		/*margin-right: 200px*/ 
+
+}
+
+header .menu li:hover{
+	color: #222243
+}
+form{
+	margin: 15px;
+}
+input[type="text"]{
+	background: #fff;
+	width: 150px;
+	height: 25px;
+	
+	outline: none;
+	padding: 0 25px;
+	border-radius: 25px 0 0 25px;
+
+}
+input[type="submit"]{
+	position: relative;
+	left: -5px;
+	border-radius: 0 25px 25px 0;
+	width: 70px;
+	height: 30px;
+	border: none;
+	outline: none; 	
+	cursor: pointer;
+	background: #ffc107;
+	color: #fff;
+
+
+}
+input[type="submit"]:hover{
+	background: #ff5722;
+}
+
+.home{
+
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-image: url(../image/home.png);
+	background-size: 45px 45px;
+	bottom: -7px;
+}
+.rm {
+	text-align: center;
+}
+.up{
+	width: 40px;
+	height: 45px;
+	background-image: url(../image/завантаження.png);
+	background-size: 45px 45px;
+	display: none;
+}
+.h_fixed {
+	display: block;
+	position: fixed;
+	right: 1%;
+	animation-name: show_heder; 
+	animation-duration: 1s;
+
+}
+@keyframes show_heder{
+	0%{
+		opacity: 0;
+		top: -70px;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+	}
+}
+
+
+
+.oll{
+	box-sizing: border-box;
+		margin: 20px auto;
+
+	max-width: 90%;
+	/*display: grid;
+	grid-template-columns: 70% 30%;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;	*/
+}
+.content-img{
+	float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0;
+	max-width: 333px;
+	max-height: 160px;
+}
+.content{
+	width: 78%;
+	float: left;
+	padding-right: 15px;
+}
+.tablet-content{
+	width: 20%;
+	float: right;
+}
+h5{
+	margin: 0;
+	text-align: center;
+}

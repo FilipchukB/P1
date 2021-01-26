@@ -1,0 +1,23 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'reg/csss/css.css' %}">
+	<title>Document</title>
+</head>
+<body>
+	<div class="model">
+		<div class="model-title">
+			<h3>Log in with</h3>
+		</div>
+		<div class="login">
+			<div class="model-google"><a href="{% provider_login_url 'google' %} "><img class="gf" src="{% static 'reg/imeges/google.svg' %}" alt="google"></a></div>
+			<div class="model-fecebock"><a href="{% provider_login_url 'facebook' method='oauth2' %}"><img class="gf" src="{% static 'reg/imeges/facebook.png' %}" alt="faceboook"></a></div>
+		</div>
+	</div>
+</body>
+</html>
